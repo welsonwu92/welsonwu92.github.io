@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>吳侑宸｜個人履歷</title>
+  <meta name="description" content="吳侑宸的個人履歷與作品集，包含學歷、技能、專案、聯絡方式。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#111833;
+      --accent:#7aa2ff;
+      --text:#e6ecff;
+      --muted:#b2b8cc;
+      --chip:#1b2347;
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --max:1024px;
+    }
+    html,body{margin:0;background:linear-gradient(145deg,#0b1020,#0e1430);color:var(--text);font-family:"Noto Sans TC", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{opacity:.9}
+    .wrap{max-width:var(--max);margin:auto;padding:24px}
+    header{display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:center;margin-top:12px}
+    header img{width:120px;height:120px;object-fit:cover;border-radius:50%;border:2px solid #2a356b;box-shadow:var(--shadow)}
+    .title h1{margin:0;font-size:32px;letter-spacing:.5px}
+    .title p{margin:6px 0 10px;color:var(--muted)}
+    .links{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:12px;background:var(--chip);border:1px solid #283369;box-shadow:var(--shadow)}
+    .btn:hover{transform:translateY(-1px)}
+    nav{position:sticky;top:0;background:rgba(11,16,32,.7);backdrop-filter:saturate(160%) blur(8px);border-bottom:1px solid #1e2750}
+    nav .tabs{display:flex;gap:12px;max-width:var(--max);margin:auto;padding:10px 24px}
+    nav .tabs a{padding:8px 12px;border-radius:10px}
+    nav .tabs a:hover{background:#131a37}
+
+    section{margin:28px 0;padding:22px;border-radius:18px;background:var(--card);box-shadow:var(--shadow);border:1px solid #1e2854}
+    section h2{margin:0 0 12px;font-size:22px}
+
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+    .col-6{grid-column:span 6}
+    .col-4{grid-column:span 4}
+    .col-12{grid-column:span 12}
+    @media (max-width:900px){.col-6,.col-4{grid-column:span 12}}
+
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{padding:6px 10px;border-radius:999px;background:var(--chip);border:1px solid #283369;color:#d6dcff;font-size:14px}
+
+    .tl{display:grid;gap:12px}
+    .item{padding:14px;border-radius:14px;background:#121a3a;border:1px solid #243064}
+    .item header{grid-template-columns:1fr auto;align-items:flex-start}
+    .item header h3{margin:0;font-size:18px}
+    .item header span{color:var(--muted);font-size:14px}
+
+    footer{color:var(--muted);text-align:center;padding:24px 0}
+  </style>
+</head>
+<body>
+  <nav aria-label="Site">
+    <div class="tabs">
+      <a href="#about">關於我</a>
+      <a href="#skills">技能</a>
+      <a href="#projects">專案</a>
+      <a href="#exp">經歷 / 學歷</a>
+      <a href="#contact">聯絡</a>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <header>
+      <img src="messageImage_1759120407123.jpg" alt="吳侑宸的照片" />
+      <div class="title">
+        <h1>吳侑宸</h1>
+        <p>智慧運算與大數據分析</p>
+        <div class="links">
+          <a class="btn" href="mailto:welsonwu92@gmail.com">📧 Email</a>
+          <a class="btn" href="https://github.com/your-id" target="_blank" rel="noopener">💻 GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/your-id" target="_blank" rel="noopener">🔗 LinkedIn</a>
+          <a class="btn" href="#contact">⬇️ 下載履歷（PDF）</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>關於我</h2>
+      <p>大家好，我是吳侑宸，目前就讀於中原大學智慧運算與大數據分析學程，對人工智慧、深度學習與資料分析充滿熱情，擅長使用 Python 進行模型訓練與資料視覺化。</p>
+    </section>
+
+    <section id="skills">
+      <h2>技能</h2>
+      <div class="chips">
+        <span class="chip">Python</span>
+        <span class="chip">YOLOv9</span>
+        <span class="chip">XGBoost</span>
+        <span class="chip">SHAP</span>
+        <span class="chip">TensorFlow</span>
+        <span class="chip">PyTorch</span>
+        <span class="chip">HTML / CSS</span>
+        <span class="chip">Tableau</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>專案</h2>
+      <div class="grid">
+        <div class="col-6 item">
+          <header>
+            <h3>門把偵測與開關狀態判斷（YOLOv9 + Mobile）</h3>
+            <span>2025</span>
+          </header>
+          <p>雙類別偵測（門 / 把手）並於推論階段自動判斷開關狀態；Android 端部署，使用 TensorFlow Lite 進行模型轉換與量化。</p>
+        </div>
+        <div class="col-6 item">
+          <header>
+            <h3>餐飲營業額成長預測（XGBoost + SHAP）</h3>
+            <span>2025</span>
+          </header>
+          <p>以實際平台資料建立成長率迴歸模型，並以 SHAP 解釋關鍵因子，提供策略建議。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="exp">
+      <h2>經歷 / 學歷</h2>
+      <div class="grid">
+        <div class="col-6">
+          <div class="tl">
+            <div class="item">
+              <header>
+                <h3>研究 / 競賽</h3>
+                <span>2024 – 2025</span>
+              </header>
+              <p>參與 AI 模型建構與解釋性分析競賽，專注於資料特徵選擇與可解釋性研究。</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="tl">
+            <div class="item">
+              <header>
+                <h3>中原大學｜智慧運算與大數據分析學程</h3>
+                <span>2023 – 在學中</span>
+              </header>
+              <p>主修課程：深度學習、資料探勘、量子計算概論、人工智慧導論。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>聯絡資訊</h2>
+      <ul>
+        <li>Email：<a href="mailto:welsonwu92@gmail.com">welsonwu92@gmail.com</a></li>
+        <li>GitHub：<a href="https://github.com/your-id" target="_blank" rel="noopener">github.com/your-id</a></li>
+        <li>LinkedIn：<a href="https://www.linkedin.com/in/your-id" target="_blank" rel="noopener">linkedin.com/in/your-id</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      © <span id="y"></span> 吳侑宸 — Hosted on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
